@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Push Pipeline
+
+jobs:
+  web-deploy:
+    name: 🎉 Deployyy!!!
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Applying Latest Commit...
+        uses: actions/checkout@v4.1.1
+
+      - name: Using Node.js v20.9.0...
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: "20.9.0"
+
+      - name: 🔨 Building...
+        run: |
+          npm i
+          npx vite build
+
+      - name: 📂 Syncing files...
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.tanvir14ahmed.space
+          username: c2b@tanvir14ahmed.space
+          password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
+          protocol: ftps
+          local-dir: ./dist/
