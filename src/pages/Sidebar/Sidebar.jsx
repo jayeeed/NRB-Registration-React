@@ -82,7 +82,10 @@ const Sidebar = () => {
       >
         <div className="h-full px-3 pb-4 overflow-y-auto bg-violet-300">
           <ul className="space-y-2 font-medium">
-            <Link to="https://www.ipsitasoft.com/">
+            <Link
+              to="https://www.ipsitasoft.com/"
+              className="text-gray-800 hover:text-blue-500 active:text-blue-500"
+            >
               <SidebarItem itemName={"Home"} logo={<FaHome />} />
             </Link>
 
@@ -92,15 +95,24 @@ const Sidebar = () => {
               notification={notification}
             />
 
-            <Link to="/profile">
+            <Link
+              to="/profile"
+              className="text-gray-800 hover:text-blue-500 active:text-blue-500"
+            >
               <SidebarItem itemName={"Profile"} logo={<FaUser />} />
             </Link>
 
-            <Link to="/info">
+            <Link
+              to="/info"
+              className="text-gray-800 hover:text-blue-500 active:text-blue-500"
+            >
               <SidebarItem itemName={"OLD form"} logo={<FaWpforms />} />
             </Link>
 
-            <Link to="/registration">
+            <Link
+              to="/registration"
+              className="text-gray-800 hover:text-blue-500 active:text-blue-500"
+            >
               <SidebarItem itemName={"Registration"} logo={<FaWpforms />} />
             </Link>
 

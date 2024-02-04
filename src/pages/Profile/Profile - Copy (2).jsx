@@ -109,12 +109,7 @@ const UserDataComponent = () => {
                           className="w-3/4 border border-gray-300 rounded px-2 py-1"
                           type="text"
                           value={userData.full_name}
-                          onChange={(e) =>
-                            setUserData({
-                              ...userData,
-                              full_name: e.target.value,
-                            })
-                          }
+                          onChange={userData.full_name}
                         />
                       ) : (
                         <span className="w-3/4 text-gray-800">
@@ -135,12 +130,7 @@ const UserDataComponent = () => {
                           className="w-3/4 border border-gray-300 rounded px-2 py-1"
                           type="text"
                           value={userData.sex}
-                          onChange={(e) =>
-                            setUserData({
-                              ...userData,
-                              sex: e.target.value,
-                            })
-                          }
+                          onChange={userData.sex}
                         />
                       ) : (
                         <span className="w-3/4 text-gray-800">
@@ -163,12 +153,7 @@ const UserDataComponent = () => {
                           className="w-3/4 border border-gray-300 rounded px-2 py-1"
                           type="text"
                           value={userData.country}
-                          onChange={(e) =>
-                            setUserData({
-                              ...userData,
-                              country: e.target.value,
-                            })
-                          }
+                          onChange={userData.country}
                         />
                       ) : (
                         <span className="w-3/4 text-gray-800">
@@ -189,12 +174,7 @@ const UserDataComponent = () => {
                           className="w-3/4 border border-gray-300 rounded px-2 py-1"
                           type="text"
                           value={userData.phone_personal}
-                          onChange={(e) =>
-                            setUserData({
-                              ...userData,
-                              phone_personal: e.target.value,
-                            })
-                          }
+                          onChange={userData.phone_personal}
                         />
                       ) : (
                         <span className="w-3/4 text-gray-800">
@@ -216,12 +196,7 @@ const UserDataComponent = () => {
                         className="w-3/4 border border-gray-300 rounded px-2 py-1"
                         type="text"
                         value={userData.address}
-                        onChange={(e) =>
-                          setUserData({
-                            ...userData,
-                            address: e.target.value,
-                          })
-                        }
+                        onChange={userData.address}
                       />
                     ) : (
                       <span className="w-3/4 text-gray-800">
@@ -242,12 +217,7 @@ const UserDataComponent = () => {
                         className="w-3/4 border border-gray-300 rounded px-2 py-1"
                         type="text"
                         value={userData.contact_email}
-                        onChange={(e) =>
-                          setUserData({
-                            ...userData,
-                            contact_email: e.target.value,
-                          })
-                        }
+                        onChange={userData.contact_email}
                       />
                     ) : (
                       <span className="w-3/4 text-gray-800">
