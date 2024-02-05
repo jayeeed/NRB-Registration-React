@@ -1,2 +1,1 @@
-# Cpanel hosting:
-## https://tanvir14ahmed.space/
+# NRB-Registration-React
